@@ -1,5 +1,7 @@
-window.onload = function () {}
+const a = function (cb) {
+  window.onload = cb;
+  // либо
+  // window.addEventListener('load', cb)
+}
 
-// либо
-
-window.addEventListener('load', function () {})
+a(function() {});
